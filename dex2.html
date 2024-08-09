@@ -3,48 +3,57 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Product Page</title>
+  <title>Landing Page</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-  <header class="bg-light py-3">
+<body class="bg-dark text-light">
+  <header class="bg-darkt py-3 text-light ">
     <div class="container d-flex justify-content-between align-items-center">
       <div class="logo">
         <h1><a href="#">ShopLogo</a></h1>
       </div>
       <nav>
-        <ul class="nav">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        <ul class="nav ">
+          <li class="nav-item text-light"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item text-light"><a class="nav-link" href="#">Shop</a></li>
+          <li class="nav-item text-light"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item text-light"><a class="nav-link" href="#">Contact</a></li>
         </ul>
       </nav>
-      <div class="search-bar">
+      <div class="search-bar bg-dark">
         <input type="text" class="form-control" placeholder="Search">
       </div>
       <div class="cart-icon">
-        <a href="cart.html"><span class="badge badge-pill badge-danger">0</span> Cart</a>
+        <a href="/components/cart.html"><span class="badge badge-pill badge-danger">0</span> Cart</a>
       </div>
     </div>
   </header>
   
-  <main class="container py-5">
-    <div class="row">
-      <div class="col-md-6">
-        <div id="product-images"></div>
+  <main>
+    <section class="hero bg-dark text-white text-center py-5">
+      <div class="container">
+        <h2>Welcome to Our Shop</h2>
+        <p>Find the best products here</p>
       </div>
-      <div class="col-md-6">
-        <h3 id="product-title"></h3>
-        <p id="product-description"></p>
-        <h4 id="product-price"></h4>
-        <button id="add-to-cart" class="btn btn-primary">Add to Cart</button>
+    </section>
+    
+    <section class="featured-products py-5 ">
+      <div class="container">
+        <h3 class="text-center mb-4">Featured Products</h3>
+        <div class="row" id="featured-products"></div>
       </div>
-    </div>
+    </section>
+    
+    <section class="categories py-5 bg-dark text-light">
+      <div class="container">
+        <h3 class="text-center mb-4">Categories</h3>
+        <div class="row" id="categories"></div>
+      </div>
+    </section>
   </main>
   
-  <footer class="bg-dark fiexd-bottom text-white py-4">
+  <footer class="bg-dark text-white py-4">
     <div class="container text-center">
       <p>Follow us on:</p>
       <div>

@@ -3,21 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
     <title>Checkout</title>
 </head>
-<body>
+<body class="container">
+  <header class="text-center my-4">
+    <h1 class="font-bold">Checkout page</h1>
 
-    <div id="orderSuma=mary"></div>
+  </header>
+  <div class="container border mt-12 p-4 rounded-lg">
+    <div id="orderSuma=mary container">
+
+    </div>
 
 
-    <form class="row g-3">
+    <form class="container row g-3 my-2">
         <div class="col-md-6">
           <label for="inputEmail4" class="form-label">Email</label>
-          <input type="email" class="form-control" id="inputEmail4">
+          <input type="email" class="form-control" id="inputEmail4" placeholder="jondoe@gomail.com">
         </div>
         <div class="col-md-6">
           <label for="inputPassword4" class="form-label">Password</label>
-          <input type="password" class="form-control" id="inputPassword4">
+          <input type="password" class="form-control" id="inputPassword4" placeholder="password">
         </div>
         <div class="col-12">
           <label for="inputAddress" class="form-label">Address</label>
@@ -29,7 +37,7 @@
         </div>
         <div class="col-md-6">
           <label for="inputCity" class="form-label">City</label>
-          <input type="text" class="form-control" id="inputCity">
+          <input type="text" class="form-control" id="inputCity" placeholder="kano central">
         </div>
         <div class="col-md-4">
           <label for="inputState" class="form-label">State</label>
@@ -51,8 +59,9 @@
           </div>
         </div>
         <div class="col-12">
-          <button type="submit" class="btn btn-primary">Sign in</button>
+          <button type="submit" class="btn btn-primary">Payments</button>
         </div>
       </form>
+  </div>
 </body>
 </html>
